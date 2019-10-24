@@ -34,7 +34,7 @@ $( document ).ready(function() {
       })
   
       // When the user clicks on the 'check' button, cross the item off.
-      $('.shopping-item-toggle').on('click', function() {
+     $('.shopping-list').on('click', '.shopping-item-toggle', function() {
         let listItem = $(this).closest('li').find('.shopping-item')
         listItem.toggleClass('shopping-item__checked')
       })
